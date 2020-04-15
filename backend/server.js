@@ -12,7 +12,7 @@ app.use(morgan("dev"));
 //MIDDLEWARES
 
 const userRoute = require("./routes/user");
-app.use("/users", userRoute);
+app.use("/user", userRoute);
 
 const PORT = process.env.PORT || 3333;
 
