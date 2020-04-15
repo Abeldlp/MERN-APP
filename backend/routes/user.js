@@ -12,4 +12,10 @@ route.get("/", async (req, res) => {
   }
 });
 
+route.post("/", async (req,res)=>{
+    const newUser = new User({
+        
+    })
+})
+
 module.exports = route;
