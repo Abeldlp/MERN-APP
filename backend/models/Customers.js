@@ -2,13 +2,7 @@ const mongoose = require("mongoose");
 
 const customerSchema = mongoose.Schema(
   {
-    username: {
-      type: String,
-      required: true,
-      unique: true,
-      trim: true,
-      minlength: 3,
-    },
+    username: String
   },
   { timestamps: true }
 );

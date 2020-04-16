@@ -15,15 +15,15 @@ router.get("/", async (req, res) => {
 
 //Post a new user to the Database
 router.post("/add", async (req, res) => {
-  const newCustomer = new User({
+  const newCustomer = new Customer({
     username: req.body.username,
   });
 
   try {
     const savedCustomer = await newCustomer.save();
-    res.json(savedCustomer);
+    res.json(`${savedCustomer.username} has been uploaded succesfully`);
   } catch (error) {
-    res.status(400).json({ message: error });
+    console.log(error);
   }
 });
 
