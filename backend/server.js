@@ -11,8 +11,11 @@ app.use(morgan("dev"));
 
 //MIDDLEWARES
 
-const userRoute = require("./routes/user");
-app.use("/user", userRoute);
+const customersRoute = require("./routes/customers");
+const exerciseRoute = require("./routes/exercise");
+
+app.use("/customers", customersRoute);
+app.use("/exercise", exerciseRoute);
 
 const PORT = process.env.PORT || 3333;
 
