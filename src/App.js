@@ -12,12 +12,13 @@ import CreateCustomer from "./components/CreateCustomer";
 function App() {
   return (
     <Router>
-      <Nav />
-      <br />
-      <Route path="/" component={ExerciseList} />
-      <Route path="/edit/:id" component={EditExercise} />
-      <Route path="/create" component={CreateExercise} />
-      <Route path="/customer" component={CreateCustomer} />
+      <div className="container">
+        <Nav />
+        <Route path="/" exact component={ExerciseList} />
+        <Route path="/edit/:id" component={EditExercise} />
+        <Route path="/create" component={CreateExercise} />
+        <Route path="/customer" component={CreateCustomer} />
+      </div>
     </Router>
   );
 }
