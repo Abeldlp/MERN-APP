@@ -19,7 +19,7 @@ const exerciseRoute = require("./routes/exercise");
 app.use("/customers", customersRoute);
 app.use("/exercise", exerciseRoute);
 
-const PORT = process.env.PORT || 3333;
+const PORT = process.env.PORT || 5000;
 
 mongoose.connect(
   process.env.DB_CONECCTION,

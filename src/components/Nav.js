@@ -7,7 +7,7 @@ const Nav = () => {
       <Link to="/" className="navbar-brand">
         ExerTracker
       </Link>
-      <div className="collapse navbar-collapse">
+      <div className="navbar-collapse">
         <ul className="navbar-nav mr-auto">
           <li className="navbar-item">
             <Link to="/" className="nav-link">
