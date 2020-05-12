@@ -33,7 +33,7 @@ export default class ExerciseList extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:5000/exercise/")
+      .get("http://192.168.1.36:5000/exercise/")
       .then((response) => {
         this.setState({ exercises: response.data });
       })
@@ -43,7 +43,7 @@ export default class ExerciseList extends Component {
   }
 
   deleteExercise(id) {
-    axios.delete("http://localhost:5000/exercise/" + id).then((res) => {
+    axios.delete("http://192.168.1.36:5000/exercise/" + id).then((res) => {
       console.log(res.data);
     });
 
